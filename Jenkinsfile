@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Checkout from SCM"){
                 steps {
-                git brach: 'main', credentialsId: 'githubz', url: 'https://github.com/ibanoba/register-app'
+                git branch: 'main', credentialsId: 'githubz', url: 'https://github.com/ibanoba/register-app'
                 }
         }
         stage("Build Application"){
