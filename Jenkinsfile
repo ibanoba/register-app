@@ -5,7 +5,7 @@ pipeline {
         maven 'Maven3'
     }
     environment {
-	        APP_NAME = "register-app-pipeline"
+	    APP_NAME = "register-app-pipeline"
             RELEASE = "1.0.0"
             DOCKER_USER = "ibanoba"
             DOCKER_PASS = 'dockerhubz'
@@ -56,7 +56,7 @@ pipeline {
                         }
                         docker.withRegistry('',Docker_PASS) {
                             docker_image.push("${IMAGE_TAG}") 
-                            docker.image.push('latest')    
+                            docker_image.push('latest')    
                             }
                         }
                     }
