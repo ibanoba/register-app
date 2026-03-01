@@ -23,7 +23,7 @@ pipeline {
                 git branch: 'main', credentialsId: 'githubz', url: 'https://github.com/ibanoba/register-app'
                 }
         }
-        stage("Build Application"){
+        stage("Build Application "){
                 steps {
                     sh "mvn clean package"
                 }        
